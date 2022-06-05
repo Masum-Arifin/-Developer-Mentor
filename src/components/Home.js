@@ -30,7 +30,7 @@ const Home = () => {
     <div className="home">
       <div className="name">
         <div className="name-inner">
-          <h1 className="name-text">Abdullah</h1>{" "}
+          <h1 className="name-text">Abdulla</h1>{" "}
           <h1 className="name-text"> </h1>{" "}
           <h1 className="name-text">al Masum. </h1>{" "}
           <p className="designation"> Web Developer | Mentor </p>{" "}
