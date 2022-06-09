@@ -47,7 +47,7 @@ const Home = () => {
             <GrFacebookOption className="social-icon" />
           </a>{" "}
           <a
-            href="https://www.linkedin.com/in/abdullah-al-masumbd/"
+            href="https://www.linkedin.com/in/abdullah-al-masumbd"
             target="_blank"
             rel="noreferrer"
             className="social"
