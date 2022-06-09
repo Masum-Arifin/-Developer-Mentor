@@ -64,7 +64,7 @@ const Home = () => {
           >
             <BsGithub className="social-icon" />
           </a>{" "}
-          <CopyToClipboard text="">
+          <CopyToClipboard text="masumarifinbd@gmail.com">
             <>
               <div onClick={notify} className="social">
                 <SiGmail className="social-icon" />
