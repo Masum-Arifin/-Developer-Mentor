@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+    useEffect
+} from "react";
+import Home from "./components/Home";
+import "./components/styles/main.scss";
+import {
+    Toaster
+} from "react-hot-toast";
+import {
+    gsap
+} from "gsap";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    useEffect(() => {
+        gsap.to(".wrapper", {
+            visibility: "visible",
+            autoAlpha: 1
+        });
+    }, []);
+
+    return ( < div style = {{visibility: "hidden"}}className = 'wrapper' >
+        <
+        Toaster position = 'bottom-right'
+        toastOptions = {
+            {
+                // className: "",
+                duration: 2000,
+                style: {
+                    background: "#2d2d2d",
+                    color: "#f0f0f0",
+                    borderRadius: 0,
+                },
+            }
+        }
+        /> <
+        Home / >
+        </div>
+    );
+};
 
 export default App;

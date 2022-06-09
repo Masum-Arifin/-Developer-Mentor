@@ -1,0 +1,143 @@
+@import "./colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: $offWhite;
+}
+
+.home {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    h1 {
+      font-family: "Lusitana", serif;
+      font-weight: 400;
+      font-size: 150px;
+      line-height: 130px;
+      color: $offBlack;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 40px;
+      color: $offBlack;
+    }
+  }
+
+  .socials {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    .social {
+      margin: 20px 0;
+      height: 150px;
+      width: 150px;
+      background-color: $offBlack;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all ease-in-out 300ms;
+      border: 2px solid $offWhite;
+      outline: 2px solid $offWhite;
+
+      .social-icon {
+        color: $offWhite;
+        font-size: 3rem;
+        transition: color ease-in-out 300ms;
+      }
+      &:hover {
+        .social-icon {
+          color: $offBlack;
+        }
+        background: $offWhite;
+        outline: 2px solid $offBlack;
+        outline-offset: -15px;
+        border: 2px solid $offBlack;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+    .name {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .socials {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      div {
+        display: flex;
+        gap: 20px;
+        .social {
+          height: 120px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  .home {
+    .name {
+      h1 {
+        font-size: 100px;
+        line-height: 90px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .socials {
+      div {
+        display: block;
+        .social {
+          height: 120px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 400px) {
+  .home {
+    .name {
+      h1 {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
