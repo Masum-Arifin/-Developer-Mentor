@@ -57,7 +57,7 @@ const Home = () => {
         </div>{" "}
         <div>
           <a
-            href="https://github.com/Masum-Arifin"
+            href="https://github.com/Masum-Arifi"
             target="_blank"
             rel="noreferrer"
             className="social"
