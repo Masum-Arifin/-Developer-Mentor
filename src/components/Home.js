@@ -41,7 +41,7 @@ const Home = () => {
           <a
             href="https://www.facebook.com/sheikh.masumaeifin"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferre"
             className="social"
           >
             <GrFacebookOption className="social-icon" />
