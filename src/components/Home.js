@@ -52,7 +52,7 @@ const Home = () => {
             rel="noreferrer"
             className="social"
           >
-            <FaLinkedin className="social-ico" />
+            <FaLinkedin className="social-icon" />
           </a>{" "}
         </div>{" "}
         <div>
